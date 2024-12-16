@@ -406,7 +406,7 @@
 			   (cond ((equal (symbol-name '=) (symbol-name (second ,args)))
 				  (cond ((listp (third ,args))
 					 (when (gethash (first ,args) ,hash)
-					   (warn "Attempting to overwrite value for identifyer ~A in statement ~{~A~^ ~}." (first ,args) (subseq ,args 0 3)))
+					   (warn "Attempting to overwrite value for identifier ~A in statement ~{~A~^ ~}." (first ,args) (subseq ,args 0 3)))
 					 (setf (gethash (first ,args) ,hash)
 					       (make-bn-node (third ,args))))
 					(t
