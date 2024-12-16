@@ -3,11 +3,6 @@ import std.stdio, std.math, std.random, std.algorithm, std.uni, std.array, std.f
 
 double[string][char] P;
 
-double vary(double mean, double maxdiff) {
-	double p = mean + uniform(-maxdiff, maxdiff);
-	return max(0.0, min(1.0, p));
-}
-
 immutable VARIATION = true;
 
 static this() {
